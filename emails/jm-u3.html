@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>4.6 out of 5, from 600+ students</title>
+<meta name="description" content="What students say, what it costs, and what your credit changes." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy:      #0A1226;
+    --navy-deep: #070D1C;
+    --blue:      #006EFF;
+    --blue-soft: #5EB6FF;
+    --blue-mist: #E8F1FF;
+    --paper:     #F7F9FC;
+    --ivory:     #F2F7FF;
+    --ink:       #14181F;
+    --ink-soft:  #4A5568;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.65; font-weight: 400; -webkit-font-smoothing: antialiased; }
+  .serif { font-family: 'Playfair Display', Georgia, serif; }
+  .preheader { display: none; max-height: 0; overflow: hidden; color: transparent; height: 0; width: 0; opacity: 0; }
+  .site-header { background: var(--navy); padding: 28px 24px; text-align: center; border-bottom: 1px solid rgba(94, 182, 255, 0.25); }
+  .site-header .brand { font-family: 'Playfair Display', serif; color: #FFFFFF; font-size: 26px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .site-header .brand em { font-style: italic; color: var(--blue-soft); }
+  .site-header .brand-sub { color: var(--blue-soft); font-family: 'Playfair Display', serif; font-style: italic; font-size: 14px; margin-top: 4px; letter-spacing: 0.04em; }
+  .flourish { width: 120px; height: 14px; margin: 6px auto 0; color: var(--blue-soft); display: block; }
+  .hero { position: relative; width: 100%; overflow: hidden; background: var(--blue-mist); }
+  .hero-img { display: block; width: 100%; height: auto; object-fit: cover; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 18, 38, 0.66) 0%, rgba(10, 18, 38, 0.42) 38%, rgba(10, 18, 38, 0.12) 70%, rgba(10, 18, 38, 0.00) 100%); display: flex; align-items: center; padding: 0 8% 0 6%; }
+  .hero-text { color: #FFFFFF; max-width: 620px; }
+  .hero-eyebrow { font-family: 'Playfair Display', serif; font-style: italic; font-size: 18px; color: var(--blue-soft); letter-spacing: 0.04em; margin-bottom: 14px; }
+  .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3.4vw, 52px); font-weight: 600; line-height: 1.12; letter-spacing: -0.005em; }
+  .hero-title em { font-style: italic; color: var(--blue-soft); }
+  main { max-width: 700px; margin: 0 auto; padding: 70px 28px 90px; }
+  .lead { font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.5; color: var(--ink); margin-bottom: 22px; font-weight: 500; }
+  .lead em, .lead strong { color: var(--navy); }
+  .prose { margin: 0 0 28px; font-size: 16.5px; line-height: 1.78; }
+  .prose p { margin: 0 0 18px; }
+  .prose p strong { font-weight: 600; color: var(--navy); }
+  .prose p em { font-style: italic; color: var(--navy); }
+  .closing { text-align: center; padding-top: 28px; border-top: 1px solid rgba(10, 18, 38, 0.08); }
+  .closing p { font-family: 'Playfair Display', serif; font-size: 22px; line-height: 1.5; color: var(--ink); margin-bottom: 12px; font-weight: 500; }
+  .closing p em { font-style: italic; color: var(--navy); }
+  .closing .small { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--ink-soft); margin-bottom: 38px; line-height: 1.7; }
+  .cta-wrap { text-align: center; }
+  .cta { display: inline-block; background: var(--navy); color: #FFFFFF !important; text-decoration: none; padding: 18px 46px; font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--blue); transition: all 0.3s ease; box-shadow: 0 2px 12px rgba(10, 18, 38, 0.12); }
+  .cta:hover { background: var(--blue); color: #FFFFFF !important; border-color: var(--navy); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0, 110, 255, 0.3); }
+  .cta-meta { margin-top: 18px; font-family: 'Playfair Display', serif; font-style: italic; font-size: 16px; color: var(--ink-soft); letter-spacing: 0.02em; }
+  .details-box { margin: 32px 0; padding: 28px 30px; background: var(--blue-mist); border-radius: 6px; border: 1px solid rgba(0, 110, 255, 0.25); }
+  .details-box .details-header { text-align: center; font-family: 'Playfair Display', serif; color: var(--blue); font-size: 14px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 18px; }
+  .details-box .details-row { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid rgba(10, 18, 38, 0.08); font-size: 14px; }
+  .details-box .details-row:first-of-type { border-top: none; }
+  .details-box .details-label { color: var(--ink-soft); letter-spacing: 0.05em; text-transform: uppercase; font-size: 12px; }
+  .details-box .details-value { color: var(--navy); font-weight: 600; text-align: right; }
+  .site-footer { background: var(--navy); color: #E9F0FA; padding: 40px 24px 36px; text-align: center; }
+  .site-footer .footer-brand { font-family: 'Playfair Display', serif; color: #FFFFFF; font-size: 20px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .site-footer .footer-tag { font-family: 'Playfair Display', serif; font-style: italic; color: var(--blue-soft); font-size: 15px; margin-top: 8px; }
+  .site-footer .footer-links { margin-top: 22px; font-size: 13px; color: rgba(233, 240, 250, 0.6); letter-spacing: 0.04em; }
+  .site-footer .footer-links a { color: rgba(233, 240, 250, 0.75); text-decoration: none; margin: 0 12px; }
+  .site-footer .footer-links a:hover { color: var(--blue-soft); }
+  .site-footer .footer-legal { margin-top: 18px; font-size: 11.5px; color: rgba(233, 240, 250, 0.45); letter-spacing: 0.04em; line-height: 1.7; }
+  .site-footer .footer-legal a { color: rgba(233, 240, 250, 0.55); text-decoration: underline; margin: 0 6px; }
+  @media (max-width: 768px) {
+    .site-header { padding: 22px 16px; }
+    .site-header .brand { font-size: 20px; }
+    .hero-overlay { position: static; background: var(--navy); padding: 28px 24px 32px; text-align: center; justify-content: center; }
+    .hero-text { max-width: 100%; }
+    .hero-title { font-size: 30px; line-height: 1.18; }
+    .hero-eyebrow { font-size: 15px; margin-bottom: 10px; }
+    main { padding: 48px 22px 70px; }
+    .lead { font-size: 21px; }
+    .prose { font-size: 16px; }
+    .details-box { padding: 22px 20px; }
+    .closing p { font-size: 19px; }
+    .cta { padding: 16px 32px; font-size: 16px; width: 100%; max-width: 340px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preheader">What students say, what it costs, and what your credit changes.</div>
+
+<header class="site-header">
+  <div class="brand">Longevity <em>Life</em> Academy</div>
+  <div class="brand-sub">by eTeacher Group</div>
+  <svg class="flourish" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="3" cy="8" r="1.5" fill="currentColor"/>
+    <path d="M 8 8 C 28 14, 50 2, 70 6 S 100 12, 116 5" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    <path d="M 116 5 q 4 -4 -1 -7" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+  </svg>
+</header>
+
+<section class="hero">
+  <img class="hero-img" src="../assets/images/jm-u3_banner_1200x700.jpg" alt="The proof, in numbers hero image" />
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <div class="hero-eyebrow">The Numbers</div>
+      <h1 class="hero-title">The <em>proof</em>, in numbers</h1>
+    </div>
+  </div>
+</section>
+
+<main>
+  <p class="lead">{{first_name}}, when we say the Blueprint works, we mean numbers you can check.</p>
+
+  <div class="prose">
+      <p>Students rate Longevity Life Academy <strong>4.6 out of 5 on Trustpilot</strong>, across more than 600 reviews. The teacher behind the method ages <strong>34% slower</strong> than her calendar, verified, ranked <strong>No.&nbsp;2 in the world</strong>.</p>
+      <p>Now the honest math. The Blueprint is <strong>$1,249 upfront</strong> (down from $1,800) or <strong>5 payments of $279</strong>. Your masterclass credit takes <strong>$200 off</strong>, and it expires on <strong>{{credit_expires_date}}</strong>.</p>
+      <p>That credit exists because you showed up. Use it while it is alive.</p>
+  </div>
+
+  <div class="closing" style="border-top: none; padding-top: 16px;">
+    <div class="cta-wrap">
+      <a class="cta" href="https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u3">Use My $200 Credit</a>
+    </div>
+  </div>
+
+  <div class="details-box">
+    <div class="details-header">The Math</div>
+    <div class="details-row"><span class="details-label">Trustpilot</span><span class="details-value">4.6 / 5, 600+ reviews</span></div>
+    <div class="details-row"><span class="details-label">Blueprint</span><span class="details-value">$1,249 upfront, or 5 x $279</span></div>
+    <div class="details-row"><span class="details-label">Your credit</span><span class="details-value">$200 off</span></div>
+    <div class="details-row"><span class="details-label">Credit expires</span><span class="details-value">{{credit_expires_date}}</span></div>
+  </div>
+
+  <div class="closing" style="border-top: none; padding-top: 16px;">
+    <div class="cta-wrap">
+      <a class="cta" href="https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u3">Use My $200 Credit</a>
+    </div>
+    <div class="cta-meta">The credit is applied automatically at enrollment.</div>
+  </div>
+
+  <div class="closing" style="margin-top: 48px;">
+    <p><em>To your longest, strongest life,</em><br/>The Longevity Life Academy team</p>
+    <p class="small">Prices shown are the standard academy rates. The credit applies on top.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">Longevity Life Academy</div>
+  <div class="footer-tag">It&rsquo;s Your Life. Live It Well.</div>
+  <div class="footer-links">
+    <a href="https://www.longevitylifeacademy.com">longevitylifeacademy.com</a>
+    <span style="opacity:0.4;">|</span>
+    <a href="mailto:admissions@longevitylifeacademy.com">admissions@longevitylifeacademy.com</a>
+  </div>
+  <div class="footer-legal">
+    You&rsquo;re receiving this because you started or completed enrollment at Longevity Life Academy by eTeacher Group.<br/>
+    <a href="{{unsubscribe_url}}">Unsubscribe</a> <a href="{{preferences_url}}">Email preferences</a> <a href="https://www.longevitylifeacademy.com/privacy.html">Privacy</a>
+  </div>
+</footer>
+
+</body>
+</html>

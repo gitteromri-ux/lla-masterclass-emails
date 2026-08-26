@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LLA Julie Masterclass · Lifecycle Emails</title>
+<meta name="robots" content="noindex, nofollow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --bg:#070B16; --panel:#0D1424; --ink:#F2F6FF; --dim:#93A1BC; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--ink); font-family:'Inter',sans-serif; line-height:1.6; }
+  .wrap { max-width:1240px; margin:0 auto; padding:64px 28px 120px; }
+  header.top { text-align:center; margin-bottom:26px; }
+  .kicker { color:#5EB6FF; text-transform:uppercase; letter-spacing:0.22em; font-size:13px; font-weight:700; }
+  h1 { font-family:'Playfair Display',serif; font-size:clamp(38px,5vw,64px); font-weight:700; line-height:1.08; margin:14px 0 12px; }
+  h1 em { font-style:italic; color:#5EB6FF; }
+  .sub { color:var(--dim); font-size:17px; max-width:760px; margin:0 auto; }
+  .meta { margin-top:20px; color:var(--dim); font-size:14.5px; }
+  .meta b { color:var(--ink); }
+  .funnel { margin-top:72px; }
+  .fhead { display:flex; gap:18px; align-items:flex-start; }
+  .fdot { width:16px; height:16px; border-radius:50%; background:var(--fc); margin-top:14px; flex:none; box-shadow:0 0 18px var(--fc); }
+  .fhead h2 { font-family:'Playfair Display',serif; font-size:clamp(26px,3vw,38px); font-weight:600; color:var(--fc); }
+  .fcode { font-family:'Inter',monospace; font-weight:700; font-size:15px; letter-spacing:0.06em; color:var(--ink); opacity:0.85; margin-top:4px; overflow-wrap:anywhere; }
+  .fdesc { color:var(--dim); font-size:15.5px; margin-top:8px; max-width:820px; }
+  .delay { margin:22px 0 0; padding:16px 20px; border:1px solid #D4A017; background:rgba(212,160,23,0.08); color:#F2D27C; font-size:15px; font-weight:600; border-radius:8px; }
+  .part { margin:34px 0 0; font-family:'Playfair Display',serif; font-style:italic; font-size:20px; color:var(--fc); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:22px; margin-top:26px; }
+  .card { background:var(--panel); border:1px solid rgba(255,255,255,0.07); border-top:3px solid var(--fc); border-radius:12px; overflow:hidden; text-decoration:none; color:var(--ink); transition:transform .2s ease, box-shadow .2s ease; display:block; }
+  .card:hover { transform:translateY(-3px); box-shadow:0 14px 40px rgba(0,0,0,0.5); }
+  .card img { width:100%; aspect-ratio:12/7; object-fit:cover; display:block; }
+  .cbody { padding:18px 20px 20px; }
+  .cname { font-weight:700; font-size:16.5px; color:var(--fc); }
+  .cwhen { color:var(--dim); font-size:13px; text-transform:uppercase; letter-spacing:0.08em; margin-top:3px; }
+  .csub { font-family:'Playfair Display',serif; font-size:19px; font-weight:600; line-height:1.35; margin-top:10px; }
+  .cpre { color:var(--dim); font-size:14px; margin-top:6px; }
+  .copen { margin-top:14px; font-weight:700; font-size:14px; color:#5EB6FF; letter-spacing:0.04em; }
+  footer { margin-top:90px; text-align:center; color:var(--dim); font-size:13.5px; line-height:1.8; }
+  @media (max-width:640px) { .wrap { padding:44px 18px 90px; } .grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="kicker">Longevity Life Academy · Julie Masterclass</div>
+  <h1>Five funnels. <em>Twenty emails.</em></h1>
+  <p class="sub">The complete lifecycle email set for the Julie Gibson Clark live masterclass. French Atelier design system, adapted to the LLA brand. Click any card to open the full email.</p>
+  <p class="meta">Sender: <b>Longevity Life Academy &lt;admissions@longevitylifeacademy.com&gt;</b> &nbsp;·&nbsp; Price: <b>$79, never discounted</b> &nbsp;·&nbsp; Dates via <b>{{session_date}}</b> token, never hard-coded</p>
+</header>
+<section class="funnel" style="--fc:#A78BFA">
+  <div class="fhead">
+    <span class="fdot"></span>
+    <div>
+      <h2>Funnel 1 · Abandoned Cart, Name and Details</h2>
+      <div class="fcode">LGV_Abandoned_Cart_Name_Details</div>
+      <p class="fdesc">Started registration, never finished screen one. Three emails to bring them back.</p>
+    </div>
+  </div><div class="grid">
+<a class="card" href="emails/jm-a1-1.html" target="_blank">
+    <img src="assets/images/jm-a1-1_banner_1200x700.jpg" alt="JM-A1.1 Seat Held banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A1.1 Seat Held</div>
+      <div class="cwhen">1 hour after abandonment</div>
+      <div class="csub">Your seat is being held, {{first_name}}</div>
+      <div class="cpre">One click brings you back. Your masterclass registration is almost done.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-a1-2.html" target="_blank">
+    <img src="assets/images/jm-a1-2_banner_1200x700.jpg" alt="JM-A1.2 Proof Push banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A1.2 Proof Push</div>
+      <div class="cwhen">24 hours after abandonment</div>
+      <div class="csub">The woman aging 34% slower than her calendar</div>
+      <div class="cpre">Why thousands follow Julie Gibson Clark, and what she teaches live.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-a1-3.html" target="_blank">
+    <img src="assets/images/jm-a1-3_banner_1200x700.jpg" alt="JM-A1.3 Final Warning banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A1.3 Final Warning</div>
+      <div class="cwhen">48 hours after abandonment</div>
+      <div class="csub">Last call before your seat opens up</div>
+      <div class="cpre">Dates are filling. Your registration is one click from done.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+</div></section>
+<section class="funnel" style="--fc:#22D3EE">
+  <div class="fhead">
+    <span class="fdot"></span>
+    <div>
+      <h2>Funnel 2 · Abandoned Cart, Course Details</h2>
+      <div class="fcode">LGV_Abandoned_Cart_Course_Details</div>
+      <p class="fdesc">Picked a session date, stopped before payment. Three emails anchored to their chosen date.</p>
+    </div>
+  </div><div class="grid">
+<a class="card" href="emails/jm-a2-1.html" target="_blank">
+    <img src="assets/images/jm-a2-1_banner_1200x700.jpg" alt="JM-A2.1 Your Date Is Waiting banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A2.1 Your Date Is Waiting</div>
+      <div class="cwhen">45 minutes after abandonment</div>
+      <div class="csub">{{first_name}}, your session on {{session_date}} is waiting</div>
+      <div class="cpre">You picked your date. It is saved, and one click completes it.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-a2-2.html" target="_blank">
+    <img src="assets/images/jm-a2-2_banner_1200x700.jpg" alt="JM-A2.2 Your Date Is Filling banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A2.2 Your Date Is Filling</div>
+      <div class="cwhen">24 hours after abandonment</div>
+      <div class="csub">Seats for {{session_date}} are filling</div>
+      <div class="cpre">Your chosen session is filling up. Your place is still saved.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-a2-3.html" target="_blank">
+    <img src="assets/images/jm-a2-3_banner_1200x700.jpg" alt="JM-A2.3 Final Call banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A2.3 Final Call</div>
+      <div class="cwhen">48 hours after abandonment</div>
+      <div class="csub">Tonight, the seat next to your name goes back</div>
+      <div class="cpre">Final call for your chosen session. One click keeps it.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+</div></section>
+<section class="funnel" style="--fc:#F87171">
+  <div class="fhead">
+    <span class="fdot"></span>
+    <div>
+      <h2>Funnel 3 · Abandoned Cart, No Payment</h2>
+      <div class="fcode">LGV_Abandoned_Cart_No_Payment</div>
+      <p class="fdesc">Reached payment, did not complete it. Three emails, the hottest leads in the system.</p>
+    </div>
+  </div><div class="grid">
+<a class="card" href="emails/jm-a3-1.html" target="_blank">
+    <img src="assets/images/jm-a3-1_banner_1200x700.jpg" alt="JM-A3.1 Complete Your Payment banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A3.1 Complete Your Payment</div>
+      <div class="cwhen">30 minutes after abandonment</div>
+      <div class="csub">Your payment didn't go through, {{first_name}}</div>
+      <div class="cpre">Everything is saved. Finishing takes under a minute.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-a3-2.html" target="_blank">
+    <img src="assets/images/jm-a3-2_banner_1200x700.jpg" alt="JM-A3.2 Seat Expiring banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A3.2 Seat Expiring</div>
+      <div class="cwhen">24 hours after abandonment</div>
+      <div class="csub">Your held seat is about to expire</div>
+      <div class="cpre">Your date is saved, your payment is not. One minute closes the gap.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-a3-3.html" target="_blank">
+    <img src="assets/images/jm-a3-3_banner_1200x700.jpg" alt="JM-A3.3 Released Tonight banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-A3.3 Released Tonight</div>
+      <div class="cwhen">48 hours after abandonment</div>
+      <div class="csub">We release your seat tonight</div>
+      <div class="cpre">Last chance to complete your enrollment before the hold ends.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+</div></section>
+<section class="funnel" style="--fc:#34D399">
+  <div class="fhead">
+    <span class="fdot"></span>
+    <div>
+      <h2>Funnel 4 · Onboarding</h2>
+      <div class="fcode">Onboarding</div>
+      <p class="fdesc">Paid buyers. Part one delivers the session. Part two converts attendance into the Blueprint with a $200 credit.</p>
+    </div>
+  </div><div class="grid">
+</div><div class="part">Part one · Getting them to the session</div><div class="grid">
+<a class="card" href="emails/jm-b1.html" target="_blank">
+    <img src="assets/images/jm-b1_banner_1200x700.jpg" alt="JM-B1 Confirmation banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-B1 Confirmation</div>
+      <div class="cwhen">Immediately after purchase</div>
+      <div class="csub">You're in. Here's everything you need</div>
+      <div class="cpre">Your Zoom link and session details are inside. Save this email.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-b2.html" target="_blank">
+    <img src="assets/images/jm-b2_banner_1200x700.jpg" alt="JM-B2 Prepare banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-B2 Prepare</div>
+      <div class="cwhen">3 days before the session</div>
+      <div class="csub">Three days to go. Here's how to prepare</div>
+      <div class="cpre">What Julie will cover, and the one thing to bring.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-b3.html" target="_blank">
+    <img src="assets/images/jm-b3_banner_1200x700.jpg" alt="JM-B3 Tomorrow banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-B3 Tomorrow</div>
+      <div class="cwhen">24 hours before the session</div>
+      <div class="csub">Tomorrow: your live session with Julie</div>
+      <div class="cpre">Your session starts in 24 hours. Your link is inside.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-b4.html" target="_blank">
+    <img src="assets/images/jm-b4_banner_1200x700.jpg" alt="JM-B4 Starting Soon banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-B4 Starting Soon</div>
+      <div class="cwhen">2 hours before the session</div>
+      <div class="csub">Starting in two hours</div>
+      <div class="cpre">Here's your link. See you inside.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+</div><div class="part">Part two · After the session, the $200 credit</div><div class="grid">
+<a class="card" href="emails/jm-u1.html" target="_blank">
+    <img src="assets/images/jm-u1_banner_1200x700.jpg" alt="JM-U1 Thank You, Credit Unlocked banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-U1 Thank You, Credit Unlocked</div>
+      <div class="cwhen">1 day after the session</div>
+      <div class="csub">Thank you, {{first_name}}. A $200 credit is now yours</div>
+      <div class="cpre">Your masterclass credit is live, and it applies to the full course.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-u2.html" target="_blank">
+    <img src="assets/images/jm-u2_banner_1200x700.jpg" alt="JM-U2 Inside the Blueprint banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-U2 Inside the Blueprint</div>
+      <div class="cwhen">3 days after the session</div>
+      <div class="csub">What the masterclass couldn't fit into 60 minutes</div>
+      <div class="cpre">Inside the 18-week Longevity Blueprint, and what changes when you take it.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-u3.html" target="_blank">
+    <img src="assets/images/jm-u3_banner_1200x700.jpg" alt="JM-U3 Proof and Credit Reminder banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-U3 Proof and Credit Reminder</div>
+      <div class="cwhen">7 days after the session</div>
+      <div class="csub">4.6 out of 5, from 600+ students</div>
+      <div class="cpre">What students say, what it costs, and what your credit changes.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-u4.html" target="_blank">
+    <img src="assets/images/jm-u4_banner_1200x700.jpg" alt="JM-U4 Credit Expires banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-U4 Credit Expires</div>
+      <div class="cwhen">12 days after the session</div>
+      <div class="csub">Your $200 credit expires on {{credit_expires_date}}</div>
+      <div class="cpre">A real deadline, and a real person to talk it through with.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+</div></section>
+<section class="funnel" style="--fc:#F472B6">
+  <div class="fhead">
+    <span class="fdot"></span>
+    <div>
+      <h2>Funnel 5 · No-Show Buyers</h2>
+      <div class="fcode">No-Show Buyers</div>
+      <p class="fdesc">Paid, did not attend. Seat transfers once to the remaining date. Three emails.</p>
+    </div>
+  </div><div class="delay">One week delay. Email team: do not work on this funnel yet. It goes live only after the first session has actually happened.</div><div class="grid">
+<a class="card" href="emails/jm-x1.html" target="_blank">
+    <img src="assets/images/jm-x1_banner_1200x700.jpg" alt="JM-X1 We Missed You banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-X1 We Missed You</div>
+      <div class="cwhen">Morning after the missed session</div>
+      <div class="csub">We missed you yesterday, {{first_name}}</div>
+      <div class="cpre">Your seat already moved to the next session. Nothing to do.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-x2.html" target="_blank">
+    <img src="assets/images/jm-x2_banner_1200x700.jpg" alt="JM-X2 Your New Date banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-X2 Your New Date</div>
+      <div class="cwhen">24 hours after JM-X1</div>
+      <div class="csub">Your new session: {{new_session_date}}</div>
+      <div class="cpre">Everything you need for your rescheduled session, in one email.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+<a class="card" href="emails/jm-x3.html" target="_blank">
+    <img src="assets/images/jm-x3_banner_1200x700.jpg" alt="JM-X3 One Seat, One Session banner" loading="lazy"/>
+    <div class="cbody">
+      <div class="cname">JM-X3 One Seat, One Session</div>
+      <div class="cwhen">3 days before the new date</div>
+      <div class="csub">One seat, one session, {{first_name}}</div>
+      <div class="cpre">This is the final live date attached to your seat.</div>
+      <div class="copen">Open email &rarr;</div>
+    </div>
+  </a>
+</div></section>
+<footer>
+  Tokens used across the set: {{first_name}}, {{session_date}}, {{new_session_date}}, {{zoom_link}}, {{credit_expires_date}}, {{unsubscribe_url}}, {{preferences_url}}.<br/>
+  Every CTA carries UTM tracking: utm_source=activecampaign, utm_medium=email, utm_campaign=funnel, utm_content=email id.
+</footer>
+</div>
+</body>
+</html>
