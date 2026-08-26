@@ -1,160 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Tonight, the seat next to your name goes back</title>
-<meta name="description" content="Final call for your chosen session. One click keeps it." />
-<meta name="robots" content="noindex, nofollow" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tonight, the seat next to your name goes back &middot; Longevity Life Academy</title>
 <style>
-  :root {
-    --navy:      #0A1226;
-    --navy-deep: #070D1C;
-    --blue:      #006EFF;
-    --blue-soft: #5EB6FF;
-    --blue-mist: #E8F1FF;
-    --paper:     #F7F9FC;
-    --ivory:     #F2F7FF;
-    --ink:       #14181F;
-    --ink-soft:  #4A5568;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.65; font-weight: 400; -webkit-font-smoothing: antialiased; }
-  .serif { font-family: 'Playfair Display', Georgia, serif; }
-  .preheader { display: none; max-height: 0; overflow: hidden; color: transparent; height: 0; width: 0; opacity: 0; }
-  .site-header { background: var(--navy); padding: 28px 24px; text-align: center; border-bottom: 1px solid rgba(94, 182, 255, 0.25); }
-  .site-header .brand { font-family: 'Playfair Display', serif; color: #FFFFFF; font-size: 26px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-  .site-header .brand em { font-style: italic; color: var(--blue-soft); }
-  .site-header .brand-sub { color: var(--blue-soft); font-family: 'Playfair Display', serif; font-style: italic; font-size: 14px; margin-top: 4px; letter-spacing: 0.04em; }
-  .flourish { width: 120px; height: 14px; margin: 6px auto 0; color: var(--blue-soft); display: block; }
-  .hero { position: relative; width: 100%; overflow: hidden; background: var(--blue-mist); }
-  .hero-img { display: block; width: 100%; height: auto; object-fit: cover; }
-  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 18, 38, 0.66) 0%, rgba(10, 18, 38, 0.42) 38%, rgba(10, 18, 38, 0.12) 70%, rgba(10, 18, 38, 0.00) 100%); display: flex; align-items: center; padding: 0 8% 0 6%; }
-  .hero-text { color: #FFFFFF; max-width: 620px; }
-  .hero-eyebrow { font-family: 'Playfair Display', serif; font-style: italic; font-size: 18px; color: var(--blue-soft); letter-spacing: 0.04em; margin-bottom: 14px; }
-  .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3.4vw, 52px); font-weight: 600; line-height: 1.12; letter-spacing: -0.005em; }
-  .hero-title em { font-style: italic; color: var(--blue-soft); }
-  main { max-width: 700px; margin: 0 auto; padding: 70px 28px 90px; }
-  .lead { font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.5; color: var(--ink); margin-bottom: 22px; font-weight: 500; }
-  .lead em, .lead strong { color: var(--navy); }
-  .prose { margin: 0 0 28px; font-size: 16.5px; line-height: 1.78; }
-  .prose p { margin: 0 0 18px; }
-  .prose p strong { font-weight: 600; color: var(--navy); }
-  .prose p em { font-style: italic; color: var(--navy); }
-  .closing { text-align: center; padding-top: 28px; border-top: 1px solid rgba(10, 18, 38, 0.08); }
-  .closing p { font-family: 'Playfair Display', serif; font-size: 22px; line-height: 1.5; color: var(--ink); margin-bottom: 12px; font-weight: 500; }
-  .closing p em { font-style: italic; color: var(--navy); }
-  .closing .small { font-family: 'Inter', sans-serif; font-size: 15px; color: var(--ink-soft); margin-bottom: 38px; line-height: 1.7; }
-  .cta-wrap { text-align: center; }
-  .cta { display: inline-block; background: var(--navy); color: #FFFFFF !important; text-decoration: none; padding: 18px 46px; font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--blue); transition: all 0.3s ease; box-shadow: 0 2px 12px rgba(10, 18, 38, 0.12); }
-  .cta:hover { background: var(--blue); color: #FFFFFF !important; border-color: var(--navy); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0, 110, 255, 0.3); }
-  .cta-meta { margin-top: 18px; font-family: 'Playfair Display', serif; font-style: italic; font-size: 16px; color: var(--ink-soft); letter-spacing: 0.02em; }
-  .details-box { margin: 32px 0; padding: 28px 30px; background: var(--blue-mist); border-radius: 6px; border: 1px solid rgba(0, 110, 255, 0.25); }
-  .details-box .details-header { text-align: center; font-family: 'Playfair Display', serif; color: var(--blue); font-size: 14px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 18px; }
-  .details-box .details-row { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid rgba(10, 18, 38, 0.08); font-size: 14px; }
-  .details-box .details-row:first-of-type { border-top: none; }
-  .details-box .details-label { color: var(--ink-soft); letter-spacing: 0.05em; text-transform: uppercase; font-size: 12px; }
-  .details-box .details-value { color: var(--navy); font-weight: 600; text-align: right; }
-  .site-footer { background: var(--navy); color: #E9F0FA; padding: 40px 24px 36px; text-align: center; }
-  .site-footer .footer-brand { font-family: 'Playfair Display', serif; color: #FFFFFF; font-size: 20px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-  .site-footer .footer-tag { font-family: 'Playfair Display', serif; font-style: italic; color: var(--blue-soft); font-size: 15px; margin-top: 8px; }
-  .site-footer .footer-links { margin-top: 22px; font-size: 13px; color: rgba(233, 240, 250, 0.6); letter-spacing: 0.04em; }
-  .site-footer .footer-links a { color: rgba(233, 240, 250, 0.75); text-decoration: none; margin: 0 12px; }
-  .site-footer .footer-links a:hover { color: var(--blue-soft); }
-  .site-footer .footer-legal { margin-top: 18px; font-size: 11.5px; color: rgba(233, 240, 250, 0.45); letter-spacing: 0.04em; line-height: 1.7; }
-  .site-footer .footer-legal a { color: rgba(233, 240, 250, 0.55); text-decoration: underline; margin: 0 6px; }
-  @media (max-width: 768px) {
-    .site-header { padding: 22px 16px; }
-    .site-header .brand { font-size: 20px; }
-    .hero-overlay { position: static; background: var(--navy); padding: 28px 24px 32px; text-align: center; justify-content: center; }
-    .hero-text { max-width: 100%; }
-    .hero-title { font-size: 30px; line-height: 1.18; }
-    .hero-eyebrow { font-size: 15px; margin-bottom: 10px; }
-    main { padding: 48px 22px 70px; }
-    .lead { font-size: 21px; }
-    .prose { font-size: 16px; }
-    .details-box { padding: 22px 20px; }
-    .closing p { font-size: 19px; }
-    .cta { padding: 16px 32px; font-size: 16px; width: 100%; max-width: 340px; }
-  }
-</style>
-</head>
-<body>
-
+  body{margin:0;padding:0;background:#F5F0E5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#0A1220}
+  .preheader{display:none;font-size:0;line-height:0;max-height:0;overflow:hidden;opacity:0;color:transparent}
+  .wrap{max-width:640px;margin:0 auto;background:#FFFFFF;border-radius:6px;overflow:hidden}
+  .top-navy{background:#0A1E3F;padding:36px 20px;text-align:center}
+  .top-navy img{display:inline-block;height:70px;width:auto}
+  .divider{height:4px;background:#5EB6FF}
+  .alert{background:#0A1E3F;padding:18px 24px;text-align:center;color:#fff;font-size:14px}
+  .alert b{color:#5EB6FF;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-right:10px}
+  .hero-img{width:100%;display:block}
+  .body-inner{padding:44px 40px 40px}
+  h1{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:28px;line-height:1.25;color:#0A1220;margin:0 0 26px}
+  h1 em{font-style:italic;color:#2E6FB8}
+  p{font-size:16px;line-height:1.6;color:#2a3244;margin:0 0 18px}
+  p b, p strong{color:#0A1220;font-weight:700}
+  .details{background:#F5F0E5;border-radius:8px;padding:24px 28px;margin:26px 0}
+  .details .dh{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2E6FB8;margin:0 0 12px}
+  .details table{width:100%;border-collapse:collapse}
+  .details td{padding:10px 0;font-size:15px;vertical-align:top}
+  .details td.k{color:#7A8497;text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:600;width:42%}
+  .details td.v{color:#0A1220}
+  .btn-row{text-align:center;padding:24px 0 8px}
+  .btn{display:inline-block;background:#5EB6FF;color:#0A1220 !important;text-decoration:none;font-weight:700;font-size:16px;padding:16px 40px;border-radius:999px}
+  .btn-meta{font-size:13px;color:#7A8497;margin:10px 0 0}
+  .signoff{margin-top:28px;font-size:15px;color:#2a3244;line-height:1.5}
+  .signoff b{color:#0A1220}
+  .small{font-size:13px;color:#7A8497;line-height:1.6;margin:18px 0 0}
+  .footer{background:#0A0C12;padding:32px 24px 20px;text-align:center;color:#B8C4DE}
+  .footer img{height:52px;width:auto;margin-bottom:14px}
+  .footer .tag{font-size:13px;color:#B8C4DE;margin:0 0 18px}
+  .footer hr{border:none;border-top:1px solid rgba(255,255,255,.12);margin:14px auto;max-width:220px}
+  .footer .fine{font-size:11px;line-height:1.5;color:#8494B4;padding:0 20px}
+  .footer .fine a{color:#8494B4;text-decoration:underline}
+  @media(max-width:520px){.body-inner{padding:32px 24px}h1{font-size:24px}.top-navy img{height:54px}.details td{display:block;width:100%}.details td.k{padding-bottom:2px}.details td.v{padding-bottom:14px}}
+</style></head><body>
 <div class="preheader">Final call for your chosen session. One click keeps it.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F5F0E5"><tr><td align="center" style="padding:24px 12px">
+<div class="wrap">
+  <div class="top-navy"><img src="../assets/lla-logo-800w.png" alt="Longevity Life Academy by eTeacher Group"></div>
+  <div class="divider"></div>
+  <div class="alert"><b>Last Call</b>&middot;&nbsp; Your saved place will not be held again</div>
+  <img class="hero-img" src="../assets/images/jm-a2-3_banner_1200x700.jpg" alt="One seat, your name on it hero image">
 
-<header class="site-header">
-  <div class="brand">Longevity <em>Life</em> Academy</div>
-  <div class="brand-sub">by eTeacher Group</div>
-  <svg class="flourish" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <circle cx="3" cy="8" r="1.5" fill="currentColor"/>
-    <path d="M 8 8 C 28 14, 50 2, 70 6 S 100 12, 116 5" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-    <path d="M 116 5 q 4 -4 -1 -7" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none"/>
-  </svg>
-</header>
-
-<section class="hero">
-  <img class="hero-img" src="../assets/images/jm-a2-3_banner_1200x700.jpg" alt="One seat, your name on it hero image" />
-  <div class="hero-overlay">
-    <div class="hero-text">
-      <div class="hero-eyebrow">Final Call</div>
-      <h1 class="hero-title">One seat, <em>your</em> name on it</h1>
-    </div>
-  </div>
-</section>
-
-<main>
-  <p class="lead">{{first_name}}, this is the last word about the seat reserved next to your name for <strong>{{session_date}}</strong>.</p>
-
-  <div class="prose">
+  <div class="body-inner">
+    <h1>One seat, <em>your</em> name on it</h1>
+    <p>{{first_name}}, this is the last word about the seat reserved next to your name for <strong>{{session_date}}</strong>.</p>
       <p>Tonight it goes back into the pool. Someone else will take it, because these sessions fill.</p>
       <p>Here is what stays true either way: <strong>60 minutes, live on Zoom</strong>, with Julie Gibson Clark walking through the routine that keeps her aging <strong>34% slower</strong> than her calendar, then answering questions from the room. No replay is planned. The live hour is the product.</p>
       <p>Nothing about the offer will change later: <strong>$79 is the full price, always</strong>. The only thing that changes is whether your seat is still there.</p>
       <p>One click keeps it. That is all that is left to do.</p>
-  </div>
-
-  <div class="closing" style="border-top: none; padding-top: 16px;">
-    <div class="cta-wrap">
-      <a class="cta" href="https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-3">Keep My Seat</a>
+    <div class="btn-row"><a class="btn" href="https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-3">Keep My Seat</a><p class="btn-meta">Your date and details are still saved.</p></div>
+    <div class="details">
+      <p class="dh">Your Reserved Seat</p>
+      <table role="presentation">
+        <tr><td class="k">Your date</td><td class="v">{{session_date}}</td></tr>
+        <tr><td class="k">Price</td><td class="v">$79, never discounted</td></tr>
+        <tr><td class="k">Releases</td><td class="v">tonight</td></tr>
+      </table>
     </div>
-  </div>
-
-  <div class="details-box">
-    <div class="details-header">Your Reserved Seat</div>
-    <div class="details-row"><span class="details-label">Your date</span><span class="details-value">{{session_date}}</span></div>
-    <div class="details-row"><span class="details-label">Price</span><span class="details-value">$79, never discounted</span></div>
-    <div class="details-row"><span class="details-label">Releases</span><span class="details-value">tonight</span></div>
-  </div>
-
-  <div class="closing" style="border-top: none; padding-top: 16px;">
-    <div class="cta-wrap">
-      <a class="cta" href="https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-3">Keep My Seat</a>
-    </div>
-    <div class="cta-meta">Your date and details are still saved.</div>
-  </div>
-
-  <div class="closing" style="margin-top: 48px;">
-    <p><em>To your longest, strongest life,</em><br/>The Longevity Life Academy team</p>
+    <div class="btn-row"><a class="btn" href="https://www.longevitylifeacademy.com/julie-masterclass/?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_abandoned_cart_course_details&utm_content=jm-a2-3">Keep My Seat</a></div>
+    <div class="signoff">To your longest, strongest life,<br><b>The Longevity Life Academy team</b></div>
     <p class="small">If the date no longer suits you, the other session can be selected on the same page.</p>
   </div>
-</main>
 
-<footer class="site-footer">
-  <div class="footer-brand">Longevity Life Academy</div>
-  <div class="footer-tag">It&rsquo;s Your Life. Live It Well.</div>
-  <div class="footer-links">
-    <a href="https://www.longevitylifeacademy.com">longevitylifeacademy.com</a>
-    <span style="opacity:0.4;">|</span>
-    <a href="mailto:admissions@longevitylifeacademy.com">admissions@longevitylifeacademy.com</a>
+  <div class="footer">
+    <img src="../assets/lla-logo-800w.png" alt="Longevity Life Academy">
+    <p class="tag">It&rsquo;s Your Life. Live It Well. Powered by eTeacher Group.</p>
+    <hr>
+    <p class="fine">You received this because you started enrollment at longevitylifeacademy.com &nbsp;&middot;&nbsp; <a href="{{unsubscribe_url}}">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="{{preferences_url}}">Update preferences</a> &nbsp;&middot;&nbsp; <a href="https://www.longevitylifeacademy.com/privacy.html">Privacy</a></p>
   </div>
-  <div class="footer-legal">
-    You&rsquo;re receiving this because you started or completed enrollment at Longevity Life Academy by eTeacher Group.<br/>
-    <a href="{{unsubscribe_url}}">Unsubscribe</a> <a href="{{preferences_url}}">Email preferences</a> <a href="https://www.longevitylifeacademy.com/privacy.html">Privacy</a>
-  </div>
-</footer>
-
-</body>
-</html>
+</div>
+</td></tr></table></body></html>
