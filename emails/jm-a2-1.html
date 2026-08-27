@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>%FIRSTNAME%, your session on %LGVMASTERCLASSSESSIONDATE% is waiting &middot; Longevity Life Academy</title>
+<title>%FIRSTNAME%, your session on {{session_date}} is waiting &middot; Longevity Life Academy</title>
 <style>
   body{margin:0;padding:0;background:#F5F0E5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#0A1220}
   .preheader{display:none;font-size:0;line-height:0;max-height:0;overflow:hidden;opacity:0;color:transparent}
@@ -47,7 +47,7 @@
 
   <div class="body-inner">
     <h1>Your date is <em>waiting</em></h1>
-    <p>Hi %FIRSTNAME%, you chose your session, <strong>%LGVMASTERCLASSSESSIONDATE%</strong>, and then something pulled you away.</p>
+    <p>Hi %FIRSTNAME%, you chose your session, <strong>{{session_date}}</strong>, and then something pulled you away.</p>
       <p>The good news: <strong>your chosen date is saved</strong>. Everything is exactly where you left it, one click from done.</p>
       <p>This is a <strong>live hour with Julie Gibson Clark on Zoom</strong>. She teaches her complete protocol in one sitting, from her sleep system to her plate to the roughly $100-a-month supplement stack, with the exact numbers behind each. Her routine costs about <strong>$100 a month</strong>, and she explains every piece of it.</p>
       <p>It is <strong>$79, one payment</strong>, with no subscription behind it. When a session fills, it closes, which is also why we cannot hold your place forever.</p>
@@ -55,7 +55,7 @@
     <div class="details">
       <p class="dh">Your Session</p>
       <table role="presentation">
-        <tr><td class="k">Your date</td><td class="v">%LGVMASTERCLASSSESSIONDATE%</td></tr>
+        <tr><td class="k">Your date</td><td class="v">{{session_date}}</td></tr>
         <tr><td class="k">Format</td><td class="v">60 minutes, live on Zoom</td></tr>
         <tr><td class="k">Price</td><td class="v">$79, one payment</td></tr>
         <tr><td class="k">Status</td><td class="v">reserved, not yet confirmed</td></tr>

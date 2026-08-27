@@ -47,7 +47,7 @@
 
   <div class="body-inner">
     <h1>Almost <em>enrolled</em></h1>
-    <p>Hi %FIRSTNAME%, you were one step from done. Your details and your session, <strong>%LGVMASTERCLASSSESSIONDATE%</strong>, are saved. Only the payment did not go through.</p>
+    <p>Hi %FIRSTNAME%, you were one step from done. Your details and your session, <strong>{{session_date}}</strong>, are saved. Only the payment did not go through.</p>
       <p>It happens, a card timeout, a page closed too soon, a bank check that took a moment too long. Nothing was charged, and nothing was lost. You are not starting over: the page remembers everything except the payment.</p>
       <p>The checkout is <strong>secure and takes under a minute</strong>: Visa, Mastercard, Amex, PayPal or Google Pay. The moment it completes, your seat is confirmed and your Zoom invitation goes out.</p>
       <p>It is <strong>$79, one payment</strong>, covered by a 14-day refund policy. There is nothing to lose except the seat, and seats are the one thing we cannot promise will wait.</p>
@@ -55,7 +55,7 @@
     <div class="details">
       <p class="dh">Your Order</p>
       <table role="presentation">
-        <tr><td class="k">Your session</td><td class="v">%LGVMASTERCLASSSESSIONDATE%</td></tr>
+        <tr><td class="k">Your session</td><td class="v">{{session_date}}</td></tr>
         <tr><td class="k">Price</td><td class="v">$79, one payment</td></tr>
         <tr><td class="k">Payment</td><td class="v">not completed</td></tr>
         <tr><td class="k">Refund policy</td><td class="v">14 days</td></tr>

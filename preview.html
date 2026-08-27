@@ -30,7 +30,7 @@
       <button class="btn" id="copy">Copy production HTML</button>
       <a class="btn" id="raw" href="#">Raw HTML for ActiveCampaign</a>
     </div>
-    <span class="note">Names, dates and links below are sample values. The production file keeps ActiveCampaign tags (%FIRSTNAME%, %LGVMASTERCLASSSESSIONDATE%, %LGVMASTERCLASSZOOMLINK%, %UNSUBSCRIBELINK%, %UPDATELINK%) that fill in automatically at send time.</span>
+    <span class="note">Names, dates and links below are sample values so every link is clickable. The production file keeps standard ActiveCampaign tags (%FIRSTNAME%, %UNSUBSCRIBELINK%, %UPDATELINK%) plus neutral placeholders for session date, Zoom link and credit expiry that your team maps to your own fields in ActiveCampaign.</span>
   </div>
   <iframe id="frame" title="Email preview"></iframe>
 <script>
@@ -42,9 +42,9 @@
   document.getElementById('raw').href = rawUrl;
   var SAMPLES = [
     ['%FIRSTNAME%', 'Anna'],
-    ['%LGVMASTERCLASSSESSIONDATE%', 'Wednesday, September 16, 4:00 PM ET'],
-    ['%LGVBLUEPRINTCREDITEXPIRES%', 'October 27, 2026'],
-    ['%LGVMASTERCLASSZOOMLINK%', 'https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-link-sample'],
+    ['{{session_date}}', 'Wednesday, September 16, 4:00 PM ET'],
+    ['{{credit_expires_date}}', 'October 27, 2026'],
+    ['{{zoom_link}}', 'https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-link-sample'],
     ['%UNSUBSCRIBELINK%', '#unsubscribe-sample'],
     ['%UPDATELINK%', '#preferences-sample']
   ];

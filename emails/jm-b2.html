@@ -47,21 +47,21 @@
 
   <div class="body-inner">
     <h1>Three days to <em>Julie</em></h1>
-    <p>%FIRSTNAME%, your session is on <strong>%LGVMASTERCLASSSESSIONDATE%</strong>. Here is how to get the most out of it.</p>
+    <p>%FIRSTNAME%, your session is on <strong>{{session_date}}</strong>. Here is how to get the most out of it.</p>
       <p>Julie will teach her complete protocol: the sleep system that runs from a 5:00 AM wake to lights out at 9:00 PM, her plate architecture, the roughly <strong>$100-a-month supplement stack</strong> item by item, and the testing she uses to prove it all works. Expect specifics, not philosophy: what she takes, what she skips, and what the numbers say.</p>
       <p><strong>Give your current sleep and food habits a minute of thought beforehand</strong>, it makes every part of the hour land on your real life.</p>
       <p>Set up somewhere quiet, keep a notebook nearby, and join a few minutes early. Your link is below, the same one from your confirmation. There is no replay, so the notes you take in the room are the ones you keep.</p>
-    <div class="btn-row"><a class="btn" href="%LGVMASTERCLASSZOOMLINK%">Open My Zoom Link</a><p class="btn-meta">Same link as your confirmation email.</p></div>
+    <div class="btn-row"><a class="btn" href="{{zoom_link}}">Open My Zoom Link</a><p class="btn-meta">Same link as your confirmation email.</p></div>
     <div class="details">
       <p class="dh">Get Ready</p>
       <table role="presentation">
-        <tr><td class="k">Date</td><td class="v">%LGVMASTERCLASSSESSIONDATE%</td></tr>
+        <tr><td class="k">Date</td><td class="v">{{session_date}}</td></tr>
         <tr><td class="k">Where</td><td class="v">Zoom, link below</td></tr>
         <tr><td class="k">Bring</td><td class="v">a notebook and a pen</td></tr>
         <tr><td class="k">Tip</td><td class="v">join 5 minutes early</td></tr>
       </table>
     </div>
-    <div class="btn-row"><a class="btn" href="%LGVMASTERCLASSZOOMLINK%">Open My Zoom Link</a></div>
+    <div class="btn-row"><a class="btn" href="{{zoom_link}}">Open My Zoom Link</a></div>
     <div class="signoff">To your longest, strongest life,<br><b>The Longevity Life Academy team</b></div>
     <p class="small">Can't make it anymore? Reply to this email and we will help.</p>
   </div>
