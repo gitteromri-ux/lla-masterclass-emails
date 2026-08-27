@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>One seat, one session, {{first_name}} &middot; Longevity Life Academy</title>
+<title>One seat, one session, %FIRSTNAME% &middot; Longevity Life Academy</title>
 <style>
   body{margin:0;padding:0;background:#F5F0E5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#0A1220}
   .preheader{display:none;font-size:0;line-height:0;max-height:0;overflow:hidden;opacity:0;color:transparent}
@@ -47,21 +47,21 @@
 
   <div class="body-inner">
     <h1>One seat, <em>one</em> session</h1>
-    <p>{{first_name}}, your rescheduled session is on <strong>{{new_session_date}}</strong>, three days from now.</p>
+    <p>%FIRSTNAME%, your rescheduled session is on <strong>%LGVMASTERCLASSSESSIONDATE%</strong>, three days from now.</p>
       <p>We want to be clear and kind at the same time: this is <strong>the final live date attached to your seat</strong>. There is no replay, and no second transfer, so this is the one to protect on your calendar.</p>
       <p>The hour itself is the easiest part. Show up, listen, take notes. Julie does the rest, and afterwards your <strong>$200 course credit</strong> becomes yours, like every attendee&rsquo;s.</p>
       <p>Your link is below, the same one from your very first confirmation. Three days from now, set up somewhere quiet, join five minutes early, and give Julie the hour. We would love to actually meet you this time.</p>
-    <div class="btn-row"><a class="btn" href="{{zoom_link}}">Open My Zoom Link</a><p class="btn-meta">Join five minutes early on the day.</p></div>
+    <div class="btn-row"><a class="btn" href="%LGVMASTERCLASSZOOMLINK%">Open My Zoom Link</a><p class="btn-meta">Join five minutes early on the day.</p></div>
     <div class="details">
       <p class="dh">Final Session</p>
       <table role="presentation">
-        <tr><td class="k">Date</td><td class="v">{{new_session_date}}</td></tr>
+        <tr><td class="k">Date</td><td class="v">%LGVMASTERCLASSSESSIONDATE%</td></tr>
         <tr><td class="k">Where</td><td class="v">Zoom, link below</td></tr>
         <tr><td class="k">Transfers left</td><td class="v">none, final date</td></tr>
         <tr><td class="k">After you attend</td><td class="v">$200 credit is added</td></tr>
       </table>
     </div>
-    <div class="btn-row"><a class="btn" href="{{zoom_link}}">Open My Zoom Link</a></div>
+    <div class="btn-row"><a class="btn" href="%LGVMASTERCLASSZOOMLINK%">Open My Zoom Link</a></div>
     <div class="signoff">To your longest, strongest life,<br><b>The Longevity Life Academy team</b></div>
     <p class="small">If something truly cannot move, reply to this email before the session.</p>
   </div>
@@ -70,7 +70,7 @@
     <img src="../assets/lla-logo-800w.png" alt="Longevity Life Academy">
     <p class="tag">It&rsquo;s Your Life. Live It Well. Powered by eTeacher Group.</p>
     <hr>
-    <p class="fine">You received this because you started enrollment at longevitylifeacademy.com &nbsp;&middot;&nbsp; <a href="{{unsubscribe_url}}">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="{{preferences_url}}">Update preferences</a> &nbsp;&middot;&nbsp; <a href="https://www.longevitylifeacademy.com/privacy.html">Privacy</a></p>
+    <p class="fine">You received this because you started enrollment at longevitylifeacademy.com &nbsp;&middot;&nbsp; <a href="%UNSUBSCRIBELINK%">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="%UPDATELINK%">Update preferences</a> &nbsp;&middot;&nbsp; <a href="https://www.longevitylifeacademy.com/privacy.html">Privacy</a></p>
   </div>
 </div>
 </td></tr></table></body></html>

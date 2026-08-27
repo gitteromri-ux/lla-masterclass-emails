@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thank you, {{first_name}}. A $200 credit is now yours &middot; Longevity Life Academy</title>
+<title>Thank you, %FIRSTNAME%. A $200 credit is now yours &middot; Longevity Life Academy</title>
 <style>
   body{margin:0;padding:0;background:#F5F0E5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#0A1220}
   .preheader{display:none;font-size:0;line-height:0;max-height:0;overflow:hidden;opacity:0;color:transparent}
@@ -47,9 +47,9 @@
 
   <div class="body-inner">
     <h1>Your <em>$200 credit</em> is live</h1>
-    <p>{{first_name}}, thank you for spending that hour with Julie. We hope it moved something.</p>
+    <p>%FIRSTNAME%, thank you for spending that hour with Julie. We hope it moved something.</p>
       <p>The masterclass was the door. Behind it is <strong>The Longevity Blueprint</strong>, the 18-week course where you stop watching someone else&rsquo;s routine and <strong>build your own</strong>.</p>
-      <p>As an attendee, a <strong>$200 credit</strong> is attached to your account, valid until <strong>{{credit_expires_date}}</strong>.</p>
+      <p>As an attendee, a <strong>$200 credit</strong> is attached to your account, valid until <strong>%LGVBLUEPRINTCREDITEXPIRES%</strong>.</p>
       <p>No pressure today. The Blueprint is not for everyone, and the masterclass owes you nothing more. But if the hour left you wanting the full system rather than notes about someone else&rsquo;s, the credit makes this the right moment to look. Questions? Just reply, a real person answers.</p>
     <div class="btn-row"><a class="btn" href="https://www.longevitylifeacademy.com/pricing.html?utm_source=activecampaign&utm_medium=email&utm_campaign=lgv_onboarding&utm_content=jm-u1">See The Blueprint</a><p class="btn-meta">Your credit is applied automatically at enrollment.</p></div>
     <div class="details">
@@ -57,7 +57,7 @@
       <table role="presentation">
         <tr><td class="k">Credit</td><td class="v">$200</td></tr>
         <tr><td class="k">Applies to</td><td class="v">The Longevity Blueprint, 18 weeks</td></tr>
-        <tr><td class="k">Valid until</td><td class="v">{{credit_expires_date}}</td></tr>
+        <tr><td class="k">Valid until</td><td class="v">%LGVBLUEPRINTCREDITEXPIRES%</td></tr>
         <tr><td class="k">Status</td><td class="v">active</td></tr>
       </table>
     </div>
@@ -70,7 +70,7 @@
     <img src="../assets/lla-logo-800w.png" alt="Longevity Life Academy">
     <p class="tag">It&rsquo;s Your Life. Live It Well. Powered by eTeacher Group.</p>
     <hr>
-    <p class="fine">You received this because you started enrollment at longevitylifeacademy.com &nbsp;&middot;&nbsp; <a href="{{unsubscribe_url}}">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="{{preferences_url}}">Update preferences</a> &nbsp;&middot;&nbsp; <a href="https://www.longevitylifeacademy.com/privacy.html">Privacy</a></p>
+    <p class="fine">You received this because you started enrollment at longevitylifeacademy.com &nbsp;&middot;&nbsp; <a href="%UNSUBSCRIBELINK%">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="%UPDATELINK%">Update preferences</a> &nbsp;&middot;&nbsp; <a href="https://www.longevitylifeacademy.com/privacy.html">Privacy</a></p>
   </div>
 </div>
 </td></tr></table></body></html>
